@@ -35,28 +35,13 @@ You can use the [GOV.UK Docker environment](https://github.com/alphagov/govuk-do
 
 ### Running the application
 
-Run `make mapit` in the `govuk-docker` repo - this will build the image and install all the dependencies.
-
-Start your Docker container by running :
-
-    $ govuk-docker up mapit-app
-
-Check you are able to access `mapit.dev.gov.uk` - it is expected that the
-frontend looks somewhat "broken", that's okay - we only need to worry about
-the database for importing data.
-
-To run any other management commands (`.venv/bin/python ./manage.py ...`), you
-will need to be in a bash shell:
-
-    $ docker exec -it <container name> /bin/bash
-
-To run management commands in other environments, you'll need the `GOVUK_ENV` environment variable set.
+To run management commands in other (non-development) environments, you'll need the `GOVUK_ENV` environment variable set.
 
 ### Running the test suite
 
-`GOVUK_ENV=development .venv/bin/python ./manage.py test mapit mapit_gb`
-
-Include any other edge cases, e.g parallel test runner in Whitehall
+```
+./manage.py test mapit mapit_gb
+```
 
 ### Further documentation
 
