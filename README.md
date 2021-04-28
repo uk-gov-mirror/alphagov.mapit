@@ -51,14 +51,6 @@ will need to be in a bash shell:
 
 To run management commands in other environments, you'll need the `GOVUK_ENV` environment variable set.
 
-### Importing data
-
-Please see [the importing data instructions](./docs/importing-data.md)
-
-### Testing a server with new data
-
-Please see [testing a server with an updated Mapit database](./docs/testing-server.md)
-
 ### Running the test suite
 
 `GOVUK_ENV=development .venv/bin/python ./manage.py test mapit mapit_gb`
@@ -77,6 +69,11 @@ So far this includes;
  - [Importing a DB from S3](import-db-from-s3.sh), to simplify bringing new servers online with the same data
 
 If we need to change the code itself, we should communicate with mysociety to try and push the work back upstream so everyone benefits.
+
+### Further documentation
+
+- [Importing data](docs/importing-data.md)
+- [Testing a server with an updated Mapit database](docs/testing-server.md)
 
 ### Example API output
 
