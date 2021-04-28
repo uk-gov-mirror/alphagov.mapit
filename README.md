@@ -1,8 +1,15 @@
 # MapIt
 
-A web service to map postcodes to administrative boundaries and more.
+This is a fork of [the MapIt repo](https://github.com/mysociety/mapit). MapIt is a Python/Django application (backed by PostgreSQL), that provides RESTful API for looking up postcodes, council boundaries, etc.
 
-MapIt was created and is maintained by [mySociety](https://github.com/mysociety/mapit), it's recommended you read their [README](https://github.com/mysociety/mapit/blob/master/README.rst) as well.
+**Avoid adding features, changing behaviours, or touching the code of MapIt itself**. The only [differences against the original repo](https://github.com/mysociety/mapit/compare/master...alphagov:master) should only be to help integrate it into the GOV.UK stack. So far this includes:
+
+ - [Pinning to specific versions of Python dependencies](https://github.com/alphagov/mapit/pull/1), for reliability
+ - [Adding a Procfile](https://github.com/alphagov/mapit/pull/2) and [unicornherder](https://github.com/alphagov/mapit/pull/12), to standardise deployment with other apps
+ - [A GOV.UK specific README](https://github.com/alphagov/mapit/pull/3), to provide context for GOV.UK developers
+ - [Importing a DB from S3](import-db-from-s3.sh), to simplify bringing new servers online with the same data
+
+If we need to change the code itself, we should communicate with mysociety to try and push the work back upstream so everyone benefits.
 
 ## Nomenclature
 
@@ -21,9 +28,6 @@ MapIt was created and is maintained by [mySociety](https://github.com/mysociety/
 - **SRID**: spatial reference identifier
 
 ## Technical documentation
-
-MapIt is a Python/Django application (backed by PostgreSQL), that provides
-RESTful API for looking up postcodes, council boundaries, etc.
 
 ### Running the application
 
@@ -50,21 +54,9 @@ To run management commands in other environments, you'll need the `GOVUK_ENV` en
 
 Include any other edge cases, e.g parallel test runner in Whitehall
 
-### Why a fork?
-
-This fork of MapIt should avoid adding features, changing behaviours, or touching the code of MapIt itself. The only [differences against the original repo](https://github.com/mysociety/mapit/compare/master...alphagov:master) should only be to help integrate it into the GOV.UK stack. This allows our fork to be kept up to date with the mySociety version.
-
-So far this includes;
-
- - [Pinning to specific versions of Python dependencies](https://github.com/alphagov/mapit/pull/1), for reliability
- - [Adding a Procfile](https://github.com/alphagov/mapit/pull/2) and [unicornherder](https://github.com/alphagov/mapit/pull/12), to standardise deployment with other apps
- - [A GOV.UK specific README](https://github.com/alphagov/mapit/pull/3), to provide context for GOV.UK developers
- - [Importing a DB from S3](import-db-from-s3.sh), to simplify bringing new servers online with the same data
-
-If we need to change the code itself, we should communicate with mysociety to try and push the work back upstream so everyone benefits.
-
 ### Further documentation
 
+- [Original README](README.rst)
 - [Importing data](docs/importing-data.md)
 - [Testing a server with an updated Mapit database](docs/testing-server.md)
 - [Example API output](docs/api.md)
