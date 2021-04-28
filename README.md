@@ -29,6 +29,10 @@ If we need to change the code itself, we should communicate with mysociety to tr
 
 ## Technical documentation
 
+You can use the [GOV.UK Docker environment](https://github.com/alphagov/govuk-docker) to run the application and its tests with all the necessary dependencies. Follow [the usage instructions](https://github.com/alphagov/govuk-docker#usage) to get started.
+
+**Use GOV.UK Docker to run any commands that follow.**
+
 ### Running the application
 
 Run `make mapit` in the `govuk-docker` repo - this will build the image and install all the dependencies.
