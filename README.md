@@ -25,13 +25,6 @@ MapIt was created and is maintained by [mySociety](https://github.com/mysociety/
 MapIt is a Python/Django application (backed by PostgreSQL), that provides
 RESTful API for looking up postcodes, council boundaries, etc.
 
-### Dependencies
-
-MapIt has no dependencies on the rest of the GOV.UK stack.
-
-- [puppet](https://github.com/alphagov/govuk-puppet/blob/master/modules/govuk/manifests/apps/mapit.pp) - definitions for the postgres and geo-spatial extensions used.
-- [mapit-scripts](https://github.com/alphagov/mapit-scripts) - scripts we use when importing data.  The data sets are released between 4 and 2 times per year, these scripts automate the process of rebuilding the db to reflect this.
-
 ### Running the application
 
 Run `make mapit` in the `govuk-docker` repo - this will build the image and install all the dependencies.
