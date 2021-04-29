@@ -2,7 +2,7 @@
 
 This is a fork of [the MapIt repo](https://github.com/mysociety/mapit). MapIt is a Python/Django application (backed by PostgreSQL), that provides RESTful API for looking up postcodes, council boundaries, etc.
 
-**Avoid adding features, changing behaviours, or touching the code of MapIt itself**. The only [differences against the original repo](https://github.com/mysociety/mapit/compare/master...alphagov:master) should only be to help integrate it into the GOV.UK stack. So far this includes:
+**Avoid adding features, changing behaviours, or touching the code of MapIt itself**. The only [differences against the original repo](https://github.com/mysociety/mapit/compare/master...alphagov:main) should only be to help integrate it into the GOV.UK stack. So far this includes:
 
  - [Pinning to specific versions of Python dependencies](https://github.com/alphagov/mapit/pull/1), for reliability
  - [Adding a Procfile](https://github.com/alphagov/mapit/pull/2) and [unicornherder](https://github.com/alphagov/mapit/pull/12), to standardise deployment with other apps

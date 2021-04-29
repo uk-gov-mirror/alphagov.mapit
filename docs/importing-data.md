@@ -203,11 +203,11 @@ Note the last few lines where it says Buckinghamshire Council has no `ons` code 
 You may have output similar to this if these councils have had some updates, and
 you will have to make some additional updates in the code:
 
-  - Missing ONS/GSS codes are added in [mapit_UK_add_missing_codes.py](https://github.com/alphagov/mapit/blob/master/mapit_gb/management/commands/mapit_UK_add_missing_codes.py), see [this example](https://github.com/alphagov/mapit/commit/532f3e88ce0f5dea64b8f7eede6fb80605648e21)
-  - An ONS/GSS code might need to be updated, or council names updated/removed in [authorities.json](https://github.com/alphagov/mapit/blob/master/mapit_gb/data/authorities.json), see [this example](https://github.com/alphagov/mapit/commit/b4d96ffa6160cfa9a8414383b96e6f1a8fa01b71)
+  - Missing ONS/GSS codes are added in [mapit_UK_add_missing_codes.py](https://github.com/alphagov/mapit/blob/main/mapit_gb/management/commands/mapit_UK_add_missing_codes.py), see [this example](https://github.com/alphagov/mapit/commit/532f3e88ce0f5dea64b8f7eede6fb80605648e21)
+  - An ONS/GSS code might need to be updated, or council names updated/removed in [authorities.json](https://github.com/alphagov/mapit/blob/main/mapit_gb/data/authorities.json), see [this example](https://github.com/alphagov/mapit/commit/b4d96ffa6160cfa9a8414383b96e6f1a8fa01b71)
   - If there are merged/abolished authorities, to prevent it from being flagged in the
   next import's output (and potentially add to the confusion), you can add them to the
-  exception list in [mapit_UK_add_override_names_to_local_authorities.py](https://github.com/alphagov/mapit/blob/master/mapit_gb/management/commands/mapit_UK_add_override_names_to_local_authorities.py#L41) and [mapit_UK_add_slugs_to_local_authorities.py](https://github.com/alphagov/mapit/blob/master/mapit_gb/management/commands/mapit_UK_add_slugs_to_local_authorities.py#L36). You can also check if the authority
+  exception list in [mapit_UK_add_override_names_to_local_authorities.py](https://github.com/alphagov/mapit/blob/main/mapit_gb/management/commands/mapit_UK_add_override_names_to_local_authorities.py#L41) and [mapit_UK_add_slugs_to_local_authorities.py](https://github.com/alphagov/mapit/blob/main/mapit_gb/management/commands/mapit_UK_add_slugs_to_local_authorities.py#L36). You can also check if the authority
   is still active on [https://findthatpostcode.uk](https://findthatpostcode.uk/areas/E07000191.html)
 
 You will have to reset the db and re-import the data again.
@@ -361,6 +361,6 @@ might also be helpful. Also see [useful database queries](#useful-database-queri
 You can also search for the area by its ONS code on the ONS website e.g.
 http://statistics.data.gov.uk/atlas/resource?uri=http://statistics.data.gov.uk/id/statistical-geography/S17000011
 
-You can manually fix it by adding a correction in [mapit/management/find_parents.py](https://github.com/alphagov/mapit/blob/master/mapit/management/find_parents.py). See [this example](https://github.com/alphagov/mapit/commit/5b2ede155a157d7d69883a6a0197513bcbcca4bb)
+You can manually fix it by adding a correction in [mapit/management/find_parents.py](https://github.com/alphagov/mapit/blob/main/mapit/management/find_parents.py). See [this example](https://github.com/alphagov/mapit/commit/5b2ede155a157d7d69883a6a0197513bcbcca4bb)
 and [this example](https://github.com/alphagov/mapit/pull/70/files#diff-8e70109ed476fd7c998d2cd2a051297478b15d926e4c4d7645361197276292eeR203)
 for more information.
