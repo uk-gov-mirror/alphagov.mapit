@@ -4,13 +4,15 @@ library("govuk")
 
 REPOSITORY = 'mapit'
 
+DEFAULT_BRANCH = 'main'
+
 node {
 
   try {
     stage('Checkout') {
       govuk.checkoutFromGitHubWithSSH(REPOSITORY)
       govuk.cleanupGit()
-      govuk.mergeIntoBranch("main")
+      govuk.mergeIntoBranch(DEFAULT_BRANCH)
     }
 
     stage('Installing Packages') {
@@ -25,13 +27,13 @@ node {
       sh("venv/bin/python manage.py test --noinput mapit mapit_gb")
     }
 
-    if (env.BRANCH_NAME == 'main') {
+    if (env.BRANCH_NAME == DEFAULT_BRANCH) {
       stage('Push release tag') {
-        govuk.pushTag(REPOSITORY, BRANCH_NAME, 'release_' + BUILD_NUMBER)
+        govuk.pushTag(REPOSITORY, BRANCH_NAME, 'release_' + BUILD_NUMBER, DEFAULT_BRANCH)
       }
 
       stage('Deploy to Integration') {
-        govuk.deployIntegration(REPOSITORY, BRANCH_NAME, 'release_' + BUILD_NUMBER, 'deploy')
+        govuk.deployToIntegration(REPOSITORY, 'release_' + BUILD_NUMBER, 'deploy')
       }
     }
   } catch (e) {
