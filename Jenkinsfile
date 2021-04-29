@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-library("govuk")
+library("govuk@broken-interpolation")
 
 REPOSITORY = 'mapit'
 
