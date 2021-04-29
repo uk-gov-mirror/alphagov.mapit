@@ -10,7 +10,7 @@ node {
     stage('Checkout') {
       govuk.checkoutFromGitHubWithSSH(REPOSITORY)
       govuk.cleanupGit()
-      govuk.mergeMasterBranch()
+      govuk.mergeIntoBranch("main")
     }
 
     stage('Installing Packages') {
@@ -25,7 +25,7 @@ node {
       sh("venv/bin/python manage.py test --noinput mapit mapit_gb")
     }
 
-    if (env.BRANCH_NAME == 'master') {
+    if (env.BRANCH_NAME == 'main') {
       stage('Push release tag') {
         govuk.pushTag(REPOSITORY, BRANCH_NAME, 'release_' + BUILD_NUMBER)
       }

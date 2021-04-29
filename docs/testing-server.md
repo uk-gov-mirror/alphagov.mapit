@@ -93,7 +93,7 @@ environments.
 
 ## Running the test samples script
 
-For a more comprehensive test, you can use the [test-samples.sh](https://github.com/alphagov/mapit/blob/master/test-samples.sh)
+For a more comprehensive test, you can use the [test-samples.sh](https://github.com/alphagov/mapit/blob/main/test-samples.sh)
 script, which needs to be run before and after a database upgrade:
 
     $ your laptop> ssh mapit-1.production
@@ -120,7 +120,7 @@ change. If this happens, you might have to change some of our apps to use the
 new codes instead of the old ones.
 
 Our forked repo of MapIt contains a file [``mapit_gb/data/authorities.json``]
-(https://github.com/alphagov/mapit/blob/master/mapit_gb/data/authorities.json)
+(https://github.com/alphagov/mapit/blob/main/mapit_gb/data/authorities.json)
 which contains a list of Local Authorities, their slugs and their GSS codes.
 During the import (invoked by the `import-uk-onspd` script), the GSS codes are
 used to match to the areas in MapIt that represent LocalAuthorities and the
