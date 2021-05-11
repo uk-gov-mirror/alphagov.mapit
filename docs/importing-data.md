@@ -63,9 +63,7 @@ This consists of the [Office for National Statistics Postcode Database (ONSPD)](
 > MySociety may have mirrored the latest datasets on their cache server: <http://parlvid.mysociety.org/os/> so check there first.
 
   1. **ONS Postcode Database** - ONSPD releases can be found via the Office
-      for National Statistics (ONS) at
-      <http://geoportal.statistics.gov.uk/datasets?q=ONS+Postcode+Directory+(ONSPD)&sort_by=name&sort_order=asc>
-      or via
+      for National Statistics (ONS) by going to 
       <http://geoportal.statistics.gov.uk/> and selecting the latest ONSPD
       from the Postcodes product drop down.
   2.  **Boundary Line data** - BL releases can be found via the Ordnance Survey (OS)
