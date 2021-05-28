@@ -58,18 +58,18 @@ Prepare your Mapit installation in Docker by:
 
 #### <a name="download-latest-data">1.2 Download the latest data from sources</a>
 
-This consists of the [Office for National Statistics Postcode Database (ONSPD)](https://geoportal.statistics.gov.uk/search?collection=Dataset&q=ONS%20Postcode%20Directory), [Ordnance Survey Boundary Line (BL)](https://osdatahub.os.uk/downloads/open/BoundaryLine), and [Ordnance Survey of Northern Ireland (OSNI)](http://osni.spatial-ni.opendata.arcgis.com/) datasets.
+This consists of the [Office for National Statistics Postcode Directory (ONSPD)](https://geoportal.statistics.gov.uk/search?collection=Dataset&q=ONS%20Postcode%20Directory), [Ordnance Survey Boundary Line (BL)](https://osdatahub.os.uk/downloads/open/BoundaryLine), and [Ordnance Survey of Northern Ireland (OSNI)](http://osni.spatial-ni.opendata.arcgis.com/) datasets.
 
 > MySociety may have mirrored the latest datasets on their cache server: <http://parlvid.mysociety.org/os/> so check there first.
 
-  1. **ONS Postcode Database** - ONSPD releases can be found via the Office
-      for National Statistics (ONS) by going to 
-      <http://geoportal.statistics.gov.uk/> and selecting the latest ONSPD
-      from the Postcodes product drop down.
-  2.  **Boundary Line data** - BL releases can be found via the Ordnance Survey (OS)
-      at
-      <https://osdatahub.os.uk/downloads/open/BoundaryLine> and select the
-      `ESRI Shapefile` format to download
+  1. **ONS Postcode Directory** - ONSPD releases can be found via the Office
+      for National Statistics (ONS) by going to the [ONS Open Geography
+      Portal](https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-created&tags=all(PRD_ONSPD))
+      then selecting the most recent ONS Postcode Directory.
+
+  2.  **Boundary Line data** - BL releases can be downloaded in ESRI format
+      from the [Ordnance Survey (OS)](https://api.os.uk/downloads/v1/products/BoundaryLine/downloads?area=GB&format=ESRI%C2%AE+Shapefile&redirect).
+
   3.  **ONSI data** - For the ONSI data we now point to Mysociety's URL in the
       [check-onsi-downloads](https://github.com/alphagov/mapit-scripts/blob/master/check-osni-downloads#L18) script, as there have not been any changes since December 2015.
       It's still worth checking if there are any updates. See [about datasets](./docs/about-datasets.md) for more information.
@@ -78,17 +78,20 @@ This consists of the [Office for National Statistics Postcode Database (ONSPD)](
 #### <a name="upload-latest-data">1.3 Upload the latest data to Amazon S3</a>
 
 Upload the latest ONS Postcode Database, Boundary Line, and OSNI datasets
-to the `govuk-custom-formats-mapit-storage-production` S3 bucket. The path
-should be of the format `source-data/<year-month>/<filename>`. Also ensure
-that you have set the permissions for the datasets to be `public` so that
-when you run the scripts later they are able to access the S3 files.
+to the [`govuk-custom-formats-mapit-storage-production` S3 bucket](https://s3.console.aws.amazon.com/s3/buckets/govuk-custom-formats-mapit-storage-production?region=eu-west-1&tab=objects).
 
->**Note:** the uploaded `<filename>` must match the naming convention
-of the dataset files. This may not be case when initially downloaded.
-For example, the ONSPD download for November 2018 is `2018-11`.
-Files within `2018-11/data` are named `ONSPD_NOV_2018_UK.xxx`.
-Before uploading in S3, rename folder `2018-11` to `ONSPD_NOV_2018_UK`.
+Create a new publicly readable directory for this import:
 
+```
+DATE=`date '+%Y-%m'`
+gds aws govuk-production-poweruser aws s3api put-object --acl public-read --bucket govuk-custom-formats-mapit-storage-production --key source-data/${DATE}/
+```
+
+For each of the files you have just downloaded:
+
+```
+gds aws govuk-production-poweruser aws s3 cp <PATH_TO_DOWNLOADED_FILE> s3://govuk-custom-formats-mapit-storage-production/source-data/${DATE}/ --acl public-read
+```
 
 #### <a name="update-url-paths">1.4 Update URL paths in data import scripts</a>
 
