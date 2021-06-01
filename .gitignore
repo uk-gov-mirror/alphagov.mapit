@@ -19,6 +19,13 @@
 # This is the name that the install notes suggest be used for the virtualenv
 .venv
 
+# Raw Mapit data
+bdline_essh_gb.zip
+Boundary-Line
+ONSPD
+ONSPD_*.zip
+
+
 # This is the MapIt data which is downloaded from S3
 mapit.sql.gz
 
