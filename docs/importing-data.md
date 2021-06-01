@@ -259,10 +259,13 @@ to what data it contains. Perhaps `mapit-<%b%Y>.sql.gz` (using
 `mapit-<%b%Y>-<a-description-of-change>.sql.gz` if you've had to change
 the data outside the normal dataset releases.
 
-Arrange to have the file you just created uploaded to the
-`govuk-custom-formats-mapit-storage-production` S3 bucket, in the same folder
-the new data has been uploaded to, and ensure that it's permission is set to `public`.
+Create a new publicly readable directory in S3 for this import and upload the file:
 
+```
+DATE=`date '+%Y-%m'`
+gds aws govuk-production-poweruser aws s3api put-object --acl public-read --bucket govuk-custom-formats-mapit-storage-production --key source-data/${DATE}/
+gds aws govuk-production-poweruser aws s3 cp mapit-<%b%Y>-<a-description-of-change>.sql.gz s3://govuk-custom-formats-mapit-storage-production/source-data/${DATE}/ --acl public-read
+```
 
 ### 3. Test a server in Staging
 
