@@ -1,867 +1,84 @@
 {
-  "buckinghamshire": {
-    "gss": "E06000060"
-  },
-  "cambridgeshire": {
-    "gss": "E10000003"
-  },
-  "cumbria": {
-    "gss": "E10000006"
-  },
-  "derbyshire": {
-    "gss": "E10000007"
-  },
-  "dorset": {
-    "gss": "E10000009"
-  },
-  "county-durham": {
-    "gss": "E06000047"
-  },
-  "east-sussex": {
-    "gss": "E10000011"
-  },
-  "essex": {
-    "gss": "E10000012"
-  },
-  "gloucestershire": {
-    "gss": "E10000013"
-  },
-  "hampshire": {
-    "gss": "E10000014"
-  },
-  "hertfordshire": {
-    "gss": "E10000015"
-  },
-  "kent": {
-    "gss": "E10000016"
-  },
-  "lancashire": {
-    "gss": "E10000017"
-  },
-  "leicestershire": {
-    "gss": "E10000018"
-  },
-  "lincolnshire": {
-    "gss": "E10000019"
-  },
-  "norfolk": {
-    "gss": "E10000020"
-  },
-  "northamptonshire": {
-    "gss": "E10000021"
-  },
-  "north-yorkshire": {
-    "gss": "E10000023"
-  },
-  "nottinghamshire": {
-    "gss": "E10000024"
-  },
-  "oxfordshire": {
-    "gss": "E10000025"
-  },
-  "shropshire": {
-    "gss": "E06000051"
-  },
-  "somerset": {
-    "gss": "E10000027"
-  },
-  "staffordshire": {
-    "gss": "E10000028"
-  },
-  "suffolk": {
-    "gss": "E10000029"
-  },
-  "surrey": {
-    "gss": "E10000030"
-  },
-  "warwickshire": {
-    "gss": "E10000031"
-  },
-  "west-sussex": {
-    "gss": "E10000032"
-  },
-  "wiltshire": {
-    "gss": "E06000054"
-  },
-  "worcestershire": {
-    "gss": "E10000034"
-  },
-  "northumberland": {
-    "gss": "E06000057"
-  },
-  "devon": {
-    "gss": "E10000008"
-  },
-  "cornwall": {
-    "gss": "E06000052"
-  },
-  "isles-of-scilly": {
-    "gss": "E06000053"
-  },
-  "bedford": {
-    "gss": "E06000055"
-  },
-  "fenland": {
-    "gss": "E07000010"
-  },
-  "south-cambridgeshire": {
-    "gss": "E07000012"
-  },
-  "east-cambridgeshire": {
-    "gss": "E07000009"
-  },
-  "huntingdonshire": {
-    "gss": "E07000011"
-  },
-  "cambridge": {
-    "gss": "E07000008"
-  },
-  "copeland": {
-    "gss": "E07000029"
-  },
-  "carlisle": {
-    "gss": "E07000028"
-  },
-  "south-lakeland": {
-    "gss": "E07000031"
-  },
-  "allerdale": {
-    "gss": "E07000026"
-  },
-  "eden": {
-    "gss": "E07000030"
-  },
-  "barrow-in-furness": {
-    "gss": "E07000027"
-  },
-  "high-peak": {
-    "gss": "E07000037"
-  },
-  "south-derbyshire": {
-    "gss": "E07000039"
-  },
-  "erewash": {
-    "gss": "E07000036"
-  },
-  "north-east-derbyshire": {
-    "gss": "E07000038"
-  },
-  "amber-valley": {
-    "gss": "E07000032"
-  },
-  "bolsover": {
-    "gss": "E07000033"
-  },
-  "derbyshire-dales": {
-    "gss": "E07000035"
-  },
-  "chesterfield": {
-    "gss": "E07000034"
-  },
-  "north-devon": {
-    "gss": "E07000043"
-  },
-  "east-devon": {
-    "gss": "E07000040"
-  },
-  "teignbridge": {
-    "gss": "E07000045"
-  },
-  "west-devon": {
-    "gss": "E07000047"
-  },
-  "mid-devon": {
-    "gss": "E07000042"
-  },
-  "exeter": {
-    "gss": "E07000041"
-  },
-  "lewes": {
-    "gss": "E07000063"
-  },
-  "rother": {
-    "gss": "E07000064"
-  },
-  "wealden": {
-    "gss": "E07000065"
-  },
-  "eastbourne": {
-    "gss": "E07000061"
-  },
-  "hastings": {
-    "gss": "E07000062"
-  },
-  "brentwood": {
-    "gss": "E07000068"
-  },
-  "rochford": {
-    "gss": "E07000075"
-  },
-  "epping-forest": {
-    "gss": "E07000072"
-  },
-  "tendring": {
-    "gss": "E07000076"
-  },
-  "uttlesford": {
-    "gss": "E07000077"
-  },
-  "chelmsford": {
-    "gss": "E07000070"
-  },
-  "colchester": {
-    "gss": "E07000071"
-  },
-  "maldon": {
-    "gss": "E07000074"
-  },
-  "braintree": {
-    "gss": "E07000067"
-  },
-  "harlow": {
-    "gss": "E07000073"
-  },
-  "basildon": {
-    "gss": "E07000066"
-  },
-  "castle-point": {
-    "gss": "E07000069"
-  },
-  "forest-of-dean": {
-    "gss": "E07000080"
-  },
-  "cotswold": {
-    "gss": "E07000079"
-  },
-  "stroud": {
-    "gss": "E07000082"
-  },
-  "tewkesbury": {
-    "gss": "E07000083"
-  },
-  "gloucester": {
-    "gss": "E07000081"
-  },
-  "cheltenham": {
-    "gss": "E07000078"
-  },
-  "basingstoke-and-deane": {
-    "gss": "E07000084"
-  },
-  "new-forest": {
-    "gss": "E07000091"
-  },
-  "eastleigh": {
-    "gss": "E07000086"
-  },
-  "east-hampshire": {
-    "gss": "E07000085"
-  },
-  "winchester": {
-    "gss": "E07000094"
-  },
-  "test-valley": {
-    "gss": "E07000093"
-  },
-  "hart": {
-    "gss": "E07000089"
-  },
-  "gosport": {
-    "gss": "E07000088"
-  },
-  "fareham": {
-    "gss": "E07000087"
-  },
-  "havant": {
-    "gss": "E07000090"
-  },
-  "rushmoor": {
-    "gss": "E07000092"
-  },
-  "three-rivers": {
-    "gss": "E07000102"
-  },
-  "hertsmere": {
-    "gss": "E07000098"
-  },
-  "broxbourne": {
-    "gss": "E07000095"
-  },
-  "dacorum": {
-    "gss": "E07000096"
-  },
-  "east-hertfordshire": {
-    "gss": "E07000242"
-  },
-  "st-albans": {
-    "gss": "E07000240"
-  },
-  "welwyn-hatfield": {
-    "gss": "E07000241"
-  },
-  "north-hertfordshire": {
-    "gss": "E07000099"
-  },
-  "watford": {
-    "gss": "E07000103"
-  },
-  "stevenage": {
-    "gss": "E07000243"
-  },
-  "tunbridge-wells": {
-    "gss": "E07000116"
-  },
-  "folkestone-hythe": {
-    "gss": "E07000112"
-  },
-  "sevenoaks": {
-    "gss": "E07000111"
-  },
-  "tonbridge-and-malling": {
-    "gss": "E07000115"
-  },
-  "thanet": {
-    "gss": "E07000114"
-  },
-  "ashford": {
-    "gss": "E07000105"
-  },
-  "canterbury": {
-    "gss": "E07000106"
-  },
-  "dover": {
-    "gss": "E07000108"
-  },
-  "maidstone": {
-    "gss": "E07000110"
-  },
-  "swale": {
-    "gss": "E07000113"
-  },
-  "dartford": {
-    "gss": "E07000107"
-  },
-  "gravesham": {
-    "gss": "E07000109"
-  },
-  "west-lancashire": {
-    "gss": "E07000127"
-  },
-  "lancaster": {
-    "gss": "E07000121"
-  },
-  "chorley": {
-    "gss": "E07000118"
-  },
-  "south-ribble": {
-    "gss": "E07000126"
-  },
-  "rossendale": {
-    "gss": "E07000125"
-  },
-  "fylde": {
-    "gss": "E07000119"
-  },
-  "preston": {
-    "gss": "E07000123"
-  },
-  "wyre": {
-    "gss": "E07000128"
-  },
-  "pendle": {
-    "gss": "E07000122"
-  },
-  "ribble-valley": {
-    "gss": "E07000124"
-  },
-  "hyndburn": {
-    "gss": "E07000120"
-  },
-  "burnley": {
-    "gss": "E07000117"
-  },
-  "hinckley-and-bosworth": {
-    "gss": "E07000132"
-  },
-  "north-west-leicestershire": {
-    "gss": "E07000134"
-  },
-  "melton": {
-    "gss": "E07000133"
-  },
-  "harborough": {
-    "gss": "E07000131"
-  },
-  "blaby": {
-    "gss": "E07000129"
-  },
-  "charnwood": {
-    "gss": "E07000130"
-  },
-  "oadby-and-wigston": {
-    "gss": "E07000135"
-  },
-  "west-lindsey": {
-    "gss": "E07000142"
-  },
-  "south-kesteven": {
-    "gss": "E07000141"
-  },
-  "south-holland": {
-    "gss": "E07000140"
-  },
-  "boston": {
-    "gss": "E07000136"
-  },
-  "north-kesteven": {
-    "gss": "E07000139"
-  },
-  "east-lindsey": {
-    "gss": "E07000137"
-  },
-  "lincoln": {
-    "gss": "E07000138"
-  },
-  "north-norfolk": {
-    "gss": "E07000147"
-  },
-  "great-yarmouth": {
-    "gss": "E07000145"
-  },
-  "south-norfolk": {
-    "gss": "E07000149"
-  },
-  "kings-lynn-and-west-norfolk": {
-    "gss": "E07000146"
-  },
-  "breckland": {
-    "gss": "E07000143"
-  },
-  "norwich": {
-    "gss": "E07000148"
-  },
-  "south-northamptonshire": {
-    "gss": "E07000155"
-  },
-  "east-northamptonshire": {
-    "gss": "E07000152"
-  },
-  "daventry": {
-    "gss": "E07000151"
-  },
-  "wellingborough": {
-    "gss": "E07000156"
-  },
-  "kettering": {
-    "gss": "E07000153"
-  },
-  "northampton": {
-    "gss": "E07000154"
-  },
-  "corby": {
-    "gss": "E07000150"
-  },
-  "scarborough": {
-    "gss": "E07000168"
-  },
-  "selby": {
-    "gss": "E07000169"
-  },
-  "craven": {
-    "gss": "E07000163"
-  },
-  "richmondshire": {
-    "gss": "E07000166"
-  },
-  "harrogate": {
-    "gss": "E07000165"
-  },
-  "ryedale": {
-    "gss": "E07000167"
-  },
-  "hambleton": {
-    "gss": "E07000164"
-  },
-  "bassetlaw": {
-    "gss": "E07000171"
-  },
-  "rushcliffe": {
-    "gss": "E07000176"
-  },
-  "gedling": {
-    "gss": "E07000173"
-  },
-  "ashfield": {
-    "gss": "E07000170"
-  },
-  "newark-and-sherwood": {
-    "gss": "E07000175"
-  },
-  "broxtowe": {
-    "gss": "E07000172"
-  },
-  "mansfield": {
-    "gss": "E07000174"
-  },
-  "vale-of-white-horse": {
-    "gss": "E07000180"
-  },
-  "south-oxfordshire": {
-    "gss": "E07000179"
-  },
-  "cherwell": {
-    "gss": "E07000177"
-  },
-  "west-oxfordshire": {
-    "gss": "E07000181"
-  },
-  "oxford": {
-    "gss": "E07000178"
-  },
-  "mendip": {
-    "gss": "E07000187"
-  },
-  "south-somerset": {
-    "gss": "E07000189"
-  },
-  "sedgemoor": {
-    "gss": "E07000188"
-  },
-  "staffordshire-moorlands": {
-    "gss": "E07000198"
-  },
-  "south-staffordshire": {
-    "gss": "E07000196"
-  },
-  "lichfield": {
-    "gss": "E07000194"
-  },
-  "newcastle-under-lyme": {
-    "gss": "E07000195"
-  },
-  "stafford": {
-    "gss": "E07000197"
-  },
-  "east-staffordshire": {
-    "gss": "E07000193"
-  },
-  "cannock-chase": {
-    "gss": "E07000192"
-  },
-  "tamworth": {
-    "gss": "E07000199"
-  },
-  "babergh": {
-    "gss": "E07000200"
-  },
-  "mid-suffolk": {
-    "gss": "E07000203"
-  },
-  "ipswich": {
-    "gss": "E07000202"
-  },
-  "waverley": {
-    "gss": "E07000216"
-  },
-  "tandridge": {
-    "gss": "E07000215"
-  },
-  "woking": {
-    "gss": "E07000217"
-  },
-  "surrey-heath": {
-    "gss": "E07000214"
-  },
-  "runnymede": {
-    "gss": "E07000212"
-  },
-  "guildford": {
-    "gss": "E07000209"
-  },
-  "reigate-and-banstead": {
-    "gss": "E07000211"
-  },
-  "mole-valley": {
-    "gss": "E07000210"
-  },
-  "elmbridge": {
-    "gss": "E07000207"
-  },
-  "spelthorne": {
-    "gss": "E07000213"
-  },
-  "epsom-and-ewell": {
-    "gss": "E07000208"
-  },
-  "north-warwickshire": {
-    "gss": "E07000218"
-  },
-  "rugby": {
-    "gss": "E07000220"
-  },
-  "warwick": {
-    "gss": "E07000222"
-  },
-  "stratford-on-avon": {
-    "gss": "E07000221"
-  },
-  "nuneaton-and-bedworth": {
-    "gss": "E07000219"
-  },
-  "arun": {
-    "gss": "E07000224"
+  "aberdeen": {
+    "gss": "S12000033"
+  },
+  "aberdeenshire": {
+    "gss": "S12000034"
   },
   "adur": {
     "gss": "E07000223"
   },
-  "chichester": {
-    "gss": "E07000225"
-  },
-  "mid-sussex": {
-    "gss": "E07000228"
-  },
-  "horsham": {
-    "gss": "E07000227"
-  },
-  "worthing": {
-    "gss": "E07000229"
-  },
-  "crawley": {
-    "gss": "E07000226"
-  },
-  "malvern-hills": {
-    "gss": "E07000235"
-  },
-  "wyre-forest": {
-    "gss": "E07000239"
-  },
-  "wychavon": {
-    "gss": "E07000238"
-  },
-  "bromsgrove": {
-    "gss": "E07000234"
-  },
-  "worcester": {
-    "gss": "E07000237"
-  },
-  "redditch": {
-    "gss": "E07000236"
-  },
-  "kingston-upon-thames": {
-    "gss": "E09000021"
-  },
-  "croydon": {
-    "gss": "E09000008"
-  },
-  "bromley": {
-    "gss": "E09000006"
-  },
-  "hounslow": {
-    "gss": "E09000018"
-  },
-  "ealing": {
-    "gss": "E09000009"
-  },
-  "havering": {
-    "gss": "E09000016"
-  },
-  "hillingdon": {
-    "gss": "E09000017"
-  },
-  "harrow": {
-    "gss": "E09000015"
-  },
-  "brent": {
-    "gss": "E09000005"
-  },
-  "barnet": {
-    "gss": "E09000003"
-  },
-  "lambeth": {
-    "gss": "E09000022"
-  },
-  "southwark": {
-    "gss": "E09000028"
-  },
-  "lewisham": {
-    "gss": "E09000023"
-  },
-  "greenwich": {
-    "gss": "E09000011"
-  },
-  "bexley": {
-    "gss": "E09000004"
-  },
-  "enfield": {
-    "gss": "E09000010"
-  },
-  "waltham-forest": {
-    "gss": "E09000031"
-  },
-  "redbridge": {
-    "gss": "E09000026"
-  },
-  "sutton": {
-    "gss": "E09000029"
-  },
-  "richmond-upon-thames": {
-    "gss": "E09000027"
-  },
-  "merton": {
-    "gss": "E09000024"
-  },
-  "wandsworth": {
-    "gss": "E09000032"
-  },
-  "hammersmith-and-fulham": {
-    "gss": "E09000013"
-  },
-  "kensington-and-chelsea": {
-    "gss": "E09000020"
-  },
-  "westminster": {
-    "gss": "E09000033"
-  },
-  "camden": {
-    "gss": "E09000007"
-  },
-  "tower-hamlets": {
-    "gss": "E09000030"
-  },
-  "islington": {
-    "gss": "E09000019"
-  },
-  "hackney": {
-    "gss": "E09000012"
-  },
-  "haringey": {
-    "gss": "E09000014"
-  },
-  "newham": {
-    "gss": "E09000025"
-  },
-  "barking-and-dagenham": {
-    "gss": "E09000002"
-  },
-  "city-of-london": {
-    "gss": "E09000001"
-  },
-  "barnsley": {
-    "gss": "E08000016"
-  },
-  "birmingham": {
-    "gss": "E08000025"
-  },
-  "bolton": {
-    "gss": "E08000001"
-  },
-  "bradford": {
-    "gss": "E08000032"
-  },
-  "bury": {
-    "gss": "E08000002"
-  },
-  "calderdale": {
-    "gss": "E08000033"
-  },
-  "wolverhampton": {
-    "gss": "E08000031"
-  },
-  "coventry": {
-    "gss": "E08000026"
-  },
-  "doncaster": {
-    "gss": "E08000017"
-  },
-  "dudley": {
-    "gss": "E08000027"
-  },
-  "gateshead": {
-    "gss": "E08000037"
-  },
-  "kirklees": {
-    "gss": "E08000034"
-  },
-  "knowsley": {
-    "gss": "E08000011"
-  },
-  "leeds": {
-    "gss": "E08000035"
-  },
-  "liverpool": {
-    "gss": "E08000012"
-  },
-  "manchester": {
-    "gss": "E08000003"
-  },
-  "newcastle-upon-tyne": {
-    "gss": "E08000021"
-  },
-  "north-tyneside": {
-    "gss": "E08000022"
-  },
-  "oldham": {
-    "gss": "E08000004"
-  },
-  "rochdale": {
-    "gss": "E08000005"
-  },
-  "rotherham": {
-    "gss": "E08000018"
-  },
-  "salford": {
-    "gss": "E08000006"
-  },
-  "sandwell": {
-    "gss": "E08000028"
-  },
-  "sefton": {
-    "gss": "E08000014"
-  },
-  "sheffield": {
-    "gss": "E08000019"
-  },
-  "solihull": {
-    "gss": "E08000029"
-  },
-  "south-tyneside": {
-    "gss": "E08000023"
-  },
-  "stockport": {
-    "gss": "E08000007"
-  },
-  "st-helens": {
-    "gss": "E08000013"
-  },
-  "sunderland": {
-    "gss": "E08000024"
-  },
-  "tameside": {
-    "gss": "E08000008"
-  },
-  "trafford": {
-    "gss": "E08000009"
-  },
-  "wakefield": {
-    "gss": "E08000036"
-  },
-  "walsall": {
-    "gss": "E08000030"
-  },
-  "wigan": {
-    "gss": "E08000010"
-  },
-  "wirral": {
-    "gss": "E08000015"
-  },
-  "swansea": {
-    "gss": "W06000011"
+  "allerdale": {
+    "gss": "E07000026"
+  },
+  "amber-valley": {
+    "gss": "E07000032"
   },
   "angus": {
     "gss": "S12000041"
   },
+  "antrim-newtownabbey": {
+    "gss": "N09000001"
+  },
+  "ards-and-north-down": {
+    "gss": "N09000011"
+  },
+  "argyll-and-bute": {
+    "gss": "S12000035"
+  },
+  "armagh-banbridge-craigavon": {
+    "gss": "N09000002"
+  },
+  "arun": {
+    "gss": "E07000224"
+  },
+  "ashfield": {
+    "gss": "E07000170"
+  },
+  "ashford": {
+    "gss": "E07000105"
+  },
+  "babergh": {
+    "gss": "E07000200"
+  },
+  "barking-and-dagenham": {
+    "gss": "E09000002"
+  },
+  "barnet": {
+    "gss": "E09000003"
+  },
+  "barnsley": {
+    "gss": "E08000016"
+  },
+  "barrow-in-furness": {
+    "gss": "E07000027"
+  },
+  "basildon": {
+    "gss": "E07000066"
+  },
+  "basingstoke-and-deane": {
+    "gss": "E07000084"
+  },
+  "bassetlaw": {
+    "gss": "E07000171"
+  },
   "bath-and-north-east-somerset": {
     "gss": "E06000022"
+  },
+  "bedford": {
+    "gss": "E06000055"
+  },
+  "belfast": {
+    "gss": "N09000003"
+  },
+  "bexley": {
+    "gss": "E09000004"
+  },
+  "birmingham": {
+    "gss": "E08000025"
+  },
+  "blaby": {
+    "gss": "E07000129"
   },
   "blackburn-with-darwen": {
     "gss": "E06000008"
@@ -872,65 +89,257 @@
   "blaenau-gwent": {
     "gss": "W06000019"
   },
+  "bolsover": {
+    "gss": "E07000033"
+  },
+  "bolton": {
+    "gss": "E08000001"
+  },
+  "boston": {
+    "gss": "E07000136"
+  },
+  "bournemouth-christchurch-poole": {
+    "gss": "E06000058"
+  },
   "bracknell-forest": {
     "gss": "E06000036"
   },
-  "vale-of-glamorgan": {
-    "gss": "W06000014"
+  "bradford": {
+    "gss": "E08000032"
   },
-  "caerphilly": {
-    "gss": "W06000018"
+  "braintree": {
+    "gss": "E07000067"
   },
-  "newport": {
-    "gss": "W06000022"
+  "breckland": {
+    "gss": "E07000143"
   },
-  "neath-port-talbot": {
-    "gss": "W06000012"
+  "brent": {
+    "gss": "E09000005"
+  },
+  "brentwood": {
+    "gss": "E07000068"
+  },
+  "bridgend": {
+    "gss": "W06000013"
+  },
+  "brighton-and-hove": {
+    "gss": "E06000043"
   },
   "bristol": {
     "gss": "E06000023"
   },
-  "derby": {
-    "gss": "E06000015"
+  "broadland": {
+    "gss": "E07000144"
   },
-  "kingston-upon-hull": {
-    "gss": "E06000010"
+  "bromley": {
+    "gss": "E09000006"
   },
-  "leicester": {
-    "gss": "E06000016"
+  "bromsgrove": {
+    "gss": "E07000234"
   },
-  "nottingham": {
-    "gss": "E06000018"
+  "broxbourne": {
+    "gss": "E07000095"
   },
-  "peterborough": {
-    "gss": "E06000031"
+  "broxtowe": {
+    "gss": "E07000172"
   },
-  "southampton": {
-    "gss": "E06000045"
+  "buckinghamshire": {
+    "gss": "E06000060"
   },
-  "stoke-on-trent": {
-    "gss": "E06000021"
+  "burnley": {
+    "gss": "E07000117"
+  },
+  "bury": {
+    "gss": "E08000002"
+  },
+  "caerphilly": {
+    "gss": "W06000018"
+  },
+  "calderdale": {
+    "gss": "E08000033"
+  },
+  "cambridge": {
+    "gss": "E07000008"
+  },
+  "cambridgeshire": {
+    "gss": "E10000003"
+  },
+  "camden": {
+    "gss": "E09000007"
+  },
+  "cannock-chase": {
+    "gss": "E07000192"
+  },
+  "canterbury": {
+    "gss": "E07000106"
+  },
+  "cardiff": {
+    "gss": "W06000015"
+  },
+  "carlisle": {
+    "gss": "E07000028"
+  },
+  "carmarthenshire": {
+    "gss": "W06000010"
+  },
+  "castle-point": {
+    "gss": "E07000069"
+  },
+  "causeway-coast-and-glens": {
+    "gss": "N09000004"
+  },
+  "central-bedfordshire": {
+    "gss": "E06000056"
+  },
+  "ceredigion": {
+    "gss": "W06000008"
+  },
+  "charnwood": {
+    "gss": "E07000130"
+  },
+  "chelmsford": {
+    "gss": "E07000070"
+  },
+  "cheltenham": {
+    "gss": "E07000078"
+  },
+  "cherwell": {
+    "gss": "E07000177"
+  },
+  "cheshire-east": {
+    "gss": "E06000049"
+  },
+  "cheshire-west-and-chester": {
+    "gss": "E06000050"
+  },
+  "chesterfield": {
+    "gss": "E07000034"
+  },
+  "chichester": {
+    "gss": "E07000225"
+  },
+  "chorley": {
+    "gss": "E07000118"
+  },
+  "city-of-london": {
+    "gss": "E09000001"
   },
   "clackmannanshire": {
     "gss": "S12000005"
   },
+  "colchester": {
+    "gss": "E07000071"
+  },
   "conwy": {
     "gss": "W06000003"
   },
-  "herefordshire": {
-    "gss": "E06000019"
+  "copeland": {
+    "gss": "E07000029"
+  },
+  "corby": {
+    "gss": "E07000150"
+  },
+  "cornwall": {
+    "gss": "E06000052"
+  },
+  "cotswold": {
+    "gss": "E07000079"
+  },
+  "county-durham": {
+    "gss": "E06000047"
+  },
+  "coventry": {
+    "gss": "E08000026"
+  },
+  "craven": {
+    "gss": "E07000163"
+  },
+  "crawley": {
+    "gss": "E07000226"
+  },
+  "croydon": {
+    "gss": "E09000008"
+  },
+  "cumbria": {
+    "gss": "E10000006"
+  },
+  "dacorum": {
+    "gss": "E07000096"
   },
   "darlington": {
     "gss": "E06000005"
   },
+  "dartford": {
+    "gss": "E07000107"
+  },
+  "daventry": {
+    "gss": "E07000151"
+  },
+  "denbighshire": {
+    "gss": "W06000004"
+  },
+  "derby": {
+    "gss": "E06000015"
+  },
+  "derbyshire": {
+    "gss": "E10000007"
+  },
+  "derbyshire-dales": {
+    "gss": "E07000035"
+  },
+  "derry-strabane": {
+    "gss": "N09000005"
+  },
+  "devon": {
+    "gss": "E10000008"
+  },
+  "doncaster": {
+    "gss": "E08000017"
+  },
+  "dorset": {
+    "gss": "E06000059"
+  },
+  "dover": {
+    "gss": "E07000108"
+  },
+  "dudley": {
+    "gss": "E08000027"
+  },
+  "dumfries-and-galloway": {
+    "gss": "S12000006"
+  },
   "dundee": {
     "gss": "S12000042"
+  },
+  "ealing": {
+    "gss": "E09000009"
   },
   "east-ayrshire": {
     "gss": "S12000008"
   },
+  "east-cambridgeshire": {
+    "gss": "E07000009"
+  },
+  "east-devon": {
+    "gss": "E07000040"
+  },
   "east-dunbartonshire": {
     "gss": "S12000045"
+  },
+  "east-hampshire": {
+    "gss": "E07000085"
+  },
+  "east-hertfordshire": {
+    "gss": "E07000242"
+  },
+  "east-lindsey": {
+    "gss": "E07000137"
+  },
+  "east-lothian": {
+    "gss": "S12000010"
+  },
+  "east-northamptonshire": {
+    "gss": "E07000152"
   },
   "east-renfrewshire": {
     "gss": "S12000011"
@@ -938,29 +347,317 @@
   "east-riding-of-yorkshire": {
     "gss": "E06000011"
   },
+  "east-staffordshire": {
+    "gss": "E07000193"
+  },
+  "east-suffolk": {
+    "gss": "E07000244"
+  },
+  "east-sussex": {
+    "gss": "E10000011"
+  },
+  "eastbourne": {
+    "gss": "E07000061"
+  },
+  "eastleigh": {
+    "gss": "E07000086"
+  },
+  "eden": {
+    "gss": "E07000030"
+  },
+  "edinburgh": {
+    "gss": "S12000036"
+  },
+  "eilean-siar": {
+    "gss": "S12000013"
+  },
+  "elmbridge": {
+    "gss": "E07000207"
+  },
+  "enfield": {
+    "gss": "E09000010"
+  },
+  "epping-forest": {
+    "gss": "E07000072"
+  },
+  "epsom-and-ewell": {
+    "gss": "E07000208"
+  },
+  "erewash": {
+    "gss": "E07000036"
+  },
+  "essex": {
+    "gss": "E10000012"
+  },
+  "exeter": {
+    "gss": "E07000041"
+  },
   "falkirk": {
     "gss": "S12000014"
+  },
+  "fareham": {
+    "gss": "E07000087"
+  },
+  "fenland": {
+    "gss": "E07000010"
+  },
+  "fermanagh-omagh": {
+    "gss": "N09000006"
+  },
+  "fife": {
+    "gss": "S12000047"
+  },
+  "flintshire": {
+    "gss": "W06000005"
+  },
+  "folkestone-hythe": {
+    "gss": "E07000112"
+  },
+  "forest-of-dean": {
+    "gss": "E07000080"
+  },
+  "fylde": {
+    "gss": "E07000119"
+  },
+  "gateshead": {
+    "gss": "E08000037"
+  },
+  "gedling": {
+    "gss": "E07000173"
   },
   "glasgow": {
     "gss": "S12000049"
   },
+  "gloucester": {
+    "gss": "E07000081"
+  },
+  "gloucestershire": {
+    "gss": "E10000013"
+  },
+  "gosport": {
+    "gss": "E07000088"
+  },
+  "gravesham": {
+    "gss": "E07000109"
+  },
+  "great-yarmouth": {
+    "gss": "E07000145"
+  },
+  "greenwich": {
+    "gss": "E09000011"
+  },
+  "guildford": {
+    "gss": "E07000209"
+  },
+  "gwynedd": {
+    "gss": "W06000002"
+  },
+  "hackney": {
+    "gss": "E09000012"
+  },
   "halton": {
     "gss": "E06000006"
+  },
+  "hambleton": {
+    "gss": "E07000164"
+  },
+  "hammersmith-and-fulham": {
+    "gss": "E09000013"
+  },
+  "hampshire": {
+    "gss": "E10000014"
+  },
+  "harborough": {
+    "gss": "E07000131"
+  },
+  "haringey": {
+    "gss": "E09000014"
+  },
+  "harlow": {
+    "gss": "E07000073"
+  },
+  "harrogate": {
+    "gss": "E07000165"
+  },
+  "harrow": {
+    "gss": "E09000015"
+  },
+  "hart": {
+    "gss": "E07000089"
   },
   "hartlepool": {
     "gss": "E06000001"
   },
+  "hastings": {
+    "gss": "E07000062"
+  },
+  "havant": {
+    "gss": "E07000090"
+  },
+  "havering": {
+    "gss": "E09000016"
+  },
+  "herefordshire": {
+    "gss": "E06000019"
+  },
+  "hertfordshire": {
+    "gss": "E10000015"
+  },
+  "hertsmere": {
+    "gss": "E07000098"
+  },
+  "high-peak": {
+    "gss": "E07000037"
+  },
+  "highland": {
+    "gss": "S12000017"
+  },
+  "hillingdon": {
+    "gss": "E09000017"
+  },
+  "hinckley-and-bosworth": {
+    "gss": "E07000132"
+  },
+  "horsham": {
+    "gss": "E07000227"
+  },
+  "hounslow": {
+    "gss": "E09000018"
+  },
+  "huntingdonshire": {
+    "gss": "E07000011"
+  },
+  "hyndburn": {
+    "gss": "E07000120"
+  },
   "inverclyde": {
     "gss": "S12000018"
+  },
+  "ipswich": {
+    "gss": "E07000202"
+  },
+  "isle-of-anglesey": {
+    "gss": "W06000001"
+  },
+  "isle-of-wight": {
+    "gss": "E06000046"
+  },
+  "isles-of-scilly": {
+    "gss": "E06000053"
+  },
+  "islington": {
+    "gss": "E09000019"
+  },
+  "kensington-and-chelsea": {
+    "gss": "E09000020"
+  },
+  "kent": {
+    "gss": "E10000016"
+  },
+  "kettering": {
+    "gss": "E07000153"
+  },
+  "kings-lynn-and-west-norfolk": {
+    "gss": "E07000146"
+  },
+  "kingston-upon-hull": {
+    "gss": "E06000010"
+  },
+  "kingston-upon-thames": {
+    "gss": "E09000021"
+  },
+  "kirklees": {
+    "gss": "E08000034"
+  },
+  "knowsley": {
+    "gss": "E08000011"
+  },
+  "lambeth": {
+    "gss": "E09000022"
+  },
+  "lancashire": {
+    "gss": "E10000017"
+  },
+  "lancaster": {
+    "gss": "E07000121"
+  },
+  "leeds": {
+    "gss": "E08000035"
+  },
+  "leicester": {
+    "gss": "E06000016"
+  },
+  "leicestershire": {
+    "gss": "E10000018"
+  },
+  "lewes": {
+    "gss": "E07000063"
+  },
+  "lewisham": {
+    "gss": "E09000023"
+  },
+  "lichfield": {
+    "gss": "E07000194"
+  },
+  "lincoln": {
+    "gss": "E07000138"
+  },
+  "lincolnshire": {
+    "gss": "E10000019"
+  },
+  "lisburn-castlereagh": {
+    "gss": "N09000007"
+  },
+  "liverpool": {
+    "gss": "E08000012"
   },
   "luton": {
     "gss": "E06000032"
   },
+  "maidstone": {
+    "gss": "E07000110"
+  },
+  "maldon": {
+    "gss": "E07000074"
+  },
+  "malvern-hills": {
+    "gss": "E07000235"
+  },
+  "manchester": {
+    "gss": "E08000003"
+  },
+  "mansfield": {
+    "gss": "E07000174"
+  },
   "medway": {
     "gss": "E06000035"
   },
+  "melton": {
+    "gss": "E07000133"
+  },
+  "mendip": {
+    "gss": "E07000187"
+  },
   "merthyr-tydfil": {
     "gss": "W06000024"
+  },
+  "merton": {
+    "gss": "E09000024"
+  },
+  "mid-and-east-antrim": {
+    "gss": "N09000008"
+  },
+  "mid-devon": {
+    "gss": "E07000042"
+  },
+  "mid-suffolk": {
+    "gss": "E07000203"
+  },
+  "mid-sussex": {
+    "gss": "E07000228"
+  },
+  "mid-ulster": {
+    "gss": "N09000009"
   },
   "middlesbrough": {
     "gss": "E06000002"
@@ -971,29 +668,158 @@
   "milton-keynes": {
     "gss": "E06000042"
   },
+  "mole-valley": {
+    "gss": "E07000210"
+  },
+  "monmouthshire": {
+    "gss": "W06000021"
+  },
+  "moray": {
+    "gss": "S12000020"
+  },
+  "neath-port-talbot": {
+    "gss": "W06000012"
+  },
+  "new-forest": {
+    "gss": "E07000091"
+  },
+  "newark-and-sherwood": {
+    "gss": "E07000175"
+  },
+  "newcastle-under-lyme": {
+    "gss": "E07000195"
+  },
+  "newcastle-upon-tyne": {
+    "gss": "E08000021"
+  },
+  "newham": {
+    "gss": "E09000025"
+  },
+  "newport": {
+    "gss": "W06000022"
+  },
+  "newry-mourne-down": {
+    "gss": "N09000010"
+  },
+  "norfolk": {
+    "gss": "E10000020"
+  },
+  "north-ayrshire": {
+    "gss": "S12000021"
+  },
+  "north-devon": {
+    "gss": "E07000043"
+  },
+  "north-east-derbyshire": {
+    "gss": "E07000038"
+  },
   "north-east-lincolnshire": {
     "gss": "E06000012"
   },
+  "north-hertfordshire": {
+    "gss": "E07000099"
+  },
+  "north-kesteven": {
+    "gss": "E07000139"
+  },
   "north-lanarkshire": {
-    "gss": "S12000044"
+    "gss": "S12000050"
   },
   "north-lincolnshire": {
     "gss": "E06000013"
   },
-  "bridgend": {
-    "gss": "W06000013"
+  "north-norfolk": {
+    "gss": "E07000147"
+  },
+  "north-somerset": {
+    "gss": "E06000024"
+  },
+  "north-tyneside": {
+    "gss": "E08000022"
+  },
+  "north-warwickshire": {
+    "gss": "E07000218"
+  },
+  "north-west-leicestershire": {
+    "gss": "E07000134"
+  },
+  "north-yorkshire": {
+    "gss": "E10000023"
+  },
+  "northampton": {
+    "gss": "E07000154"
+  },
+  "northamptonshire": {
+    "gss": "E10000021"
+  },
+  "northumberland": {
+    "gss": "E06000057"
+  },
+  "norwich": {
+    "gss": "E07000148"
+  },
+  "nottingham": {
+    "gss": "E06000018"
+  },
+  "nottinghamshire": {
+    "gss": "E10000024"
+  },
+  "nuneaton-and-bedworth": {
+    "gss": "E07000219"
+  },
+  "oadby-and-wigston": {
+    "gss": "E07000135"
+  },
+  "oldham": {
+    "gss": "E08000004"
+  },
+  "orkney-islands": {
+    "gss": "S12000023"
+  },
+  "oxford": {
+    "gss": "E07000178"
+  },
+  "oxfordshire": {
+    "gss": "E10000025"
+  },
+  "pembrokeshire": {
+    "gss": "W06000009"
+  },
+  "pendle": {
+    "gss": "E07000122"
   },
   "perth-and-kinross": {
     "gss": "S12000048"
   },
+  "peterborough": {
+    "gss": "E06000031"
+  },
+  "plymouth": {
+    "gss": "E06000026"
+  },
+  "portsmouth": {
+    "gss": "E06000044"
+  },
   "powys": {
     "gss": "W06000023"
+  },
+  "preston": {
+    "gss": "E07000123"
   },
   "reading": {
     "gss": "E06000038"
   },
+  "redbridge": {
+    "gss": "E09000026"
+  },
   "redcar-and-cleveland": {
     "gss": "E06000003"
+  },
+  "redditch": {
+    "gss": "E07000236"
+  },
+  "reigate-and-banstead": {
+    "gss": "E07000211"
   },
   "renfrewshire": {
     "gss": "S12000038"
@@ -1001,220 +827,388 @@
   "rhondda-cynon-taff": {
     "gss": "W06000016"
   },
+  "ribble-valley": {
+    "gss": "E07000124"
+  },
+  "richmond-upon-thames": {
+    "gss": "E09000027"
+  },
+  "richmondshire": {
+    "gss": "E07000166"
+  },
+  "rochdale": {
+    "gss": "E08000005"
+  },
+  "rochford": {
+    "gss": "E07000075"
+  },
+  "rossendale": {
+    "gss": "E07000125"
+  },
+  "rother": {
+    "gss": "E07000064"
+  },
+  "rotherham": {
+    "gss": "E08000018"
+  },
+  "rugby": {
+    "gss": "E07000220"
+  },
+  "runnymede": {
+    "gss": "E07000212"
+  },
+  "rushcliffe": {
+    "gss": "E07000176"
+  },
+  "rushmoor": {
+    "gss": "E07000092"
+  },
   "rutland": {
     "gss": "E06000017"
+  },
+  "ryedale": {
+    "gss": "E07000167"
+  },
+  "salford": {
+    "gss": "E08000006"
+  },
+  "sandwell": {
+    "gss": "E08000028"
+  },
+  "scarborough": {
+    "gss": "E07000168"
   },
   "scottish-borders": {
     "gss": "S12000026"
   },
-  "denbighshire": {
-    "gss": "W06000004"
+  "sedgemoor": {
+    "gss": "E07000188"
   },
-  "monmouthshire": {
-    "gss": "W06000021"
+  "sefton": {
+    "gss": "E08000014"
   },
-  "carmarthenshire": {
-    "gss": "W06000010"
+  "selby": {
+    "gss": "E07000169"
   },
-  "flintshire": {
-    "gss": "W06000005"
+  "sevenoaks": {
+    "gss": "E07000111"
   },
-  "slough": {
-    "gss": "E06000039"
-  },
-  "southend-on-sea": {
-    "gss": "E06000033"
-  },
-  "south-gloucestershire": {
-    "gss": "E06000025"
-  },
-  "south-lanarkshire": {
-    "gss": "S12000029"
-  },
-  "stirling": {
-    "gss": "S12000030"
-  },
-  "stockton-on-tees": {
-    "gss": "E06000004"
-  },
-  "swindon": {
-    "gss": "E06000030"
-  },
-  "telford-and-wrekin": {
-    "gss": "E06000020"
-  },
-  "brighton-and-hove": {
-    "gss": "E06000043"
-  },
-  "thurrock": {
-    "gss": "E06000034"
-  },
-  "torfaen": {
-    "gss": "W06000020"
-  },
-  "torbay": {
-    "gss": "E06000027"
-  },
-  "warrington": {
-    "gss": "E06000007"
-  },
-  "west-berkshire": {
-    "gss": "E06000037"
-  },
-  "west-dunbartonshire": {
-    "gss": "S12000039"
-  },
-  "west-lothian": {
-    "gss": "S12000040"
-  },
-  "windsor-and-maidenhead": {
-    "gss": "E06000040"
-  },
-  "wokingham": {
-    "gss": "E06000041"
-  },
-  "wrexham": {
-    "gss": "W06000006"
-  },
-  "york": {
-    "gss": "E06000014"
-  },
-  "broadland": {
-    "gss": "E07000144"
-  },
-  "south-hams": {
-    "gss": "E07000044"
-  },
-  "torridge": {
-    "gss": "E07000046"
-  },
-  "cheshire-west-and-chester": {
-    "gss": "E06000050"
-  },
-  "cheshire-east": {
-    "gss": "E06000049"
-  },
-  "central-bedfordshire": {
-    "gss": "E06000056"
-  },
-  "cardiff": {
-    "gss": "W06000015"
-  },
-  "ceredigion": {
-    "gss": "W06000008"
-  },
-  "pembrokeshire": {
-    "gss": "W06000009"
-  },
-  "north-somerset": {
-    "gss": "E06000024"
-  },
-  "highland": {
-    "gss": "S12000017"
-  },
-  "moray": {
-    "gss": "S12000020"
-  },
-  "orkney-islands": {
-    "gss": "S12000023"
-  },
-  "eilean-siar": {
-    "gss": "S12000013"
-  },
-  "argyll-and-bute": {
-    "gss": "S12000035"
-  },
-  "aberdeenshire": {
-    "gss": "S12000034"
-  },
-  "fife": {
-    "gss": "S12000047"
-  },
-  "aberdeen": {
-    "gss": "S12000033"
-  },
-  "edinburgh": {
-    "gss": "S12000036"
-  },
-  "east-lothian": {
-    "gss": "S12000010"
+  "sheffield": {
+    "gss": "E08000019"
   },
   "shetland-islands": {
     "gss": "S12000027"
   },
-  "north-ayrshire": {
-    "gss": "S12000021"
+  "shropshire": {
+    "gss": "E06000051"
   },
-  "south-ayrshire": {
-    "gss": "S12000028"
+  "slough": {
+    "gss": "E06000039"
   },
-  "dumfries-and-galloway": {
-    "gss": "S12000006"
+  "solihull": {
+    "gss": "E08000029"
   },
-  "portsmouth": {
-    "gss": "E06000044"
-  },
-  "plymouth": {
-    "gss": "E06000026"
-  },
-  "isle-of-wight": {
-    "gss": "E06000046"
-  },
-  "isle-of-anglesey": {
-    "gss": "W06000001"
-  },
-  "gwynedd": {
-    "gss": "W06000002"
-  },
-  "antrim-newtownabbey": {
-    "gss": "N09000001"
-  },
-  "armagh-banbridge-craigavon": {
-    "gss": "N09000002"
-  },
-  "belfast": {
-    "gss": "N09000003"
-  },
-  "causeway-coast-and-glens": {
-    "gss": "N09000004"
-  },
-  "derry-strabane": {
-    "gss": "N09000005"
-  },
-  "fermanagh-omagh": {
-    "gss": "N09000006"
-  },
-  "lisburn-castlereagh": {
-    "gss": "N09000007"
-  },
-  "mid-and-east-antrim": {
-    "gss": "N09000008"
-  },
-  "mid-ulster": {
-    "gss": "N09000009"
-  },
-  "newry-mourne-down": {
-    "gss": "N09000010"
-  },
-  "ards-and-north-down": {
-    "gss": "N09000011"
-  },
-  "east-suffolk": {
-    "gss": "E07000244"
+  "somerset": {
+    "gss": "E10000027"
   },
   "somerset-west-taunton": {
     "gss": "E07000246"
   },
+  "south-ayrshire": {
+    "gss": "S12000028"
+  },
+  "south-cambridgeshire": {
+    "gss": "E07000012"
+  },
+  "south-derbyshire": {
+    "gss": "E07000039"
+  },
+  "south-gloucestershire": {
+    "gss": "E06000025"
+  },
+  "south-hams": {
+    "gss": "E07000044"
+  },
+  "south-holland": {
+    "gss": "E07000140"
+  },
+  "south-kesteven": {
+    "gss": "E07000141"
+  },
+  "south-lakeland": {
+    "gss": "E07000031"
+  },
+  "south-lanarkshire": {
+    "gss": "S12000029"
+  },
+  "south-norfolk": {
+    "gss": "E07000149"
+  },
+  "south-northamptonshire": {
+    "gss": "E07000155"
+  },
+  "south-oxfordshire": {
+    "gss": "E07000179"
+  },
+  "south-ribble": {
+    "gss": "E07000126"
+  },
+  "south-somerset": {
+    "gss": "E07000189"
+  },
+  "south-staffordshire": {
+    "gss": "E07000196"
+  },
+  "south-tyneside": {
+    "gss": "E08000023"
+  },
+  "southampton": {
+    "gss": "E06000045"
+  },
+  "southend-on-sea": {
+    "gss": "E06000033"
+  },
+  "southwark": {
+    "gss": "E09000028"
+  },
+  "spelthorne": {
+    "gss": "E07000213"
+  },
+  "st-albans": {
+    "gss": "E07000240"
+  },
+  "st-helens": {
+    "gss": "E08000013"
+  },
+  "stafford": {
+    "gss": "E07000197"
+  },
+  "staffordshire": {
+    "gss": "E10000028"
+  },
+  "staffordshire-moorlands": {
+    "gss": "E07000198"
+  },
+  "stevenage": {
+    "gss": "E07000243"
+  },
+  "stirling": {
+    "gss": "S12000030"
+  },
+  "stockport": {
+    "gss": "E08000007"
+  },
+  "stockton-on-tees": {
+    "gss": "E06000004"
+  },
+  "stoke-on-trent": {
+    "gss": "E06000021"
+  },
+  "stratford-on-avon": {
+    "gss": "E07000221"
+  },
+  "stroud": {
+    "gss": "E07000082"
+  },
+  "suffolk": {
+    "gss": "E10000029"
+  },
+  "sunderland": {
+    "gss": "E08000024"
+  },
+  "surrey": {
+    "gss": "E10000030"
+  },
+  "surrey-heath": {
+    "gss": "E07000214"
+  },
+  "sutton": {
+    "gss": "E09000029"
+  },
+  "swale": {
+    "gss": "E07000113"
+  },
+  "swansea": {
+    "gss": "W06000011"
+  },
+  "swindon": {
+    "gss": "E06000030"
+  },
+  "tameside": {
+    "gss": "E08000008"
+  },
+  "tamworth": {
+    "gss": "E07000199"
+  },
+  "tandridge": {
+    "gss": "E07000215"
+  },
+  "teignbridge": {
+    "gss": "E07000045"
+  },
+  "telford-and-wrekin": {
+    "gss": "E06000020"
+  },
+  "tendring": {
+    "gss": "E07000076"
+  },
+  "test-valley": {
+    "gss": "E07000093"
+  },
+  "tewkesbury": {
+    "gss": "E07000083"
+  },
+  "thanet": {
+    "gss": "E07000114"
+  },
+  "three-rivers": {
+    "gss": "E07000102"
+  },
+  "thurrock": {
+    "gss": "E06000034"
+  },
+  "tonbridge-and-malling": {
+    "gss": "E07000115"
+  },
+  "torbay": {
+    "gss": "E06000027"
+  },
+  "torfaen": {
+    "gss": "W06000020"
+  },
+  "torridge": {
+    "gss": "E07000046"
+  },
+  "tower-hamlets": {
+    "gss": "E09000030"
+  },
+  "trafford": {
+    "gss": "E08000009"
+  },
+  "tunbridge-wells": {
+    "gss": "E07000116"
+  },
+  "uttlesford": {
+    "gss": "E07000077"
+  },
+  "vale-of-glamorgan": {
+    "gss": "W06000014"
+  },
+  "vale-of-white-horse": {
+    "gss": "E07000180"
+  },
+  "wakefield": {
+    "gss": "E08000036"
+  },
+  "walsall": {
+    "gss": "E08000030"
+  },
+  "waltham-forest": {
+    "gss": "E09000031"
+  },
+  "wandsworth": {
+    "gss": "E09000032"
+  },
+  "warrington": {
+    "gss": "E06000007"
+  },
+  "warwick": {
+    "gss": "E07000222"
+  },
+  "warwickshire": {
+    "gss": "E10000031"
+  },
+  "watford": {
+    "gss": "E07000103"
+  },
+  "waverley": {
+    "gss": "E07000216"
+  },
+  "wealden": {
+    "gss": "E07000065"
+  },
+  "wellingborough": {
+    "gss": "E07000156"
+  },
+  "welwyn-hatfield": {
+    "gss": "E07000241"
+  },
+  "west-berkshire": {
+    "gss": "E06000037"
+  },
+  "west-devon": {
+    "gss": "E07000047"
+  },
+  "west-dunbartonshire": {
+    "gss": "S12000039"
+  },
+  "west-lancashire": {
+    "gss": "E07000127"
+  },
+  "west-lindsey": {
+    "gss": "E07000142"
+  },
+  "west-lothian": {
+    "gss": "S12000040"
+  },
+  "west-oxfordshire": {
+    "gss": "E07000181"
+  },
   "west-suffolk": {
     "gss": "E07000245"
   },
-  "bournemouth-christchurch-poole": {
-    "gss": "E06000058"
+  "west-sussex": {
+    "gss": "E10000032"
   },
-  "dorset": {
-    "gss": "E06000059"
+  "westminster": {
+    "gss": "E09000033"
   },
-  "north-lanarkshire": {
-    "gss": "S12000050"
+  "wigan": {
+    "gss": "E08000010"
+  },
+  "wiltshire": {
+    "gss": "E06000054"
+  },
+  "winchester": {
+    "gss": "E07000094"
+  },
+  "windsor-and-maidenhead": {
+    "gss": "E06000040"
+  },
+  "wirral": {
+    "gss": "E08000015"
+  },
+  "woking": {
+    "gss": "E07000217"
+  },
+  "wokingham": {
+    "gss": "E06000041"
+  },
+  "wolverhampton": {
+    "gss": "E08000031"
+  },
+  "worcester": {
+    "gss": "E07000237"
+  },
+  "worcestershire": {
+    "gss": "E10000034"
+  },
+  "worthing": {
+    "gss": "E07000229"
+  },
+  "wrexham": {
+    "gss": "W06000006"
+  },
+  "wychavon": {
+    "gss": "E07000238"
+  },
+  "wyre": {
+    "gss": "E07000128"
+  },
+  "wyre-forest": {
+    "gss": "E07000239"
+  },
+  "york": {
+    "gss": "E06000014"
   }
 }
