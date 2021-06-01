@@ -139,8 +139,9 @@ ONS/SNAC code. If it lists any areas that are missing codes and you
 don't expect them (run the script on production or integration if
 you're not sure) you'll need to investigate.
 
-Ssh into one of the machines and run:
+SSH into one of the machines and run:
 
+    gds govuk c ssh -e integration mapit
     $ cd /var/apps/mapit
     $ sudo -u deploy govuk_setenv mapit venv3/bin/python manage.py mapit_UK_show_missing_codes
 
