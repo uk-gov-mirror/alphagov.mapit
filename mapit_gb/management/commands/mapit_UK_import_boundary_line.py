@@ -101,6 +101,9 @@ class Command(LabelCommand):
             else:
                 raise Exception(area_code)
 
+            if area_code == 'ER':
+                area_code = 'EUR'
+
             try:
                 check = control.check(name, area_code, country, feat.geom, ons_code=ons_code, commit=options['commit'])
                 if check is True:
