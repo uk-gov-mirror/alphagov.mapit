@@ -236,9 +236,6 @@
   "copeland": {
     "gss": "E07000029"
   },
-  "corby": {
-    "gss": "E07000150"
-  },
   "cornwall": {
     "gss": "E06000052"
   },
@@ -271,9 +268,6 @@
   },
   "dartford": {
     "gss": "E07000107"
-  },
-  "daventry": {
-    "gss": "E07000151"
   },
   "denbighshire": {
     "gss": "W06000004"
@@ -337,9 +331,6 @@
   },
   "east-lothian": {
     "gss": "S12000010"
-  },
-  "east-northamptonshire": {
-    "gss": "E07000152"
   },
   "east-renfrewshire": {
     "gss": "S12000011"
@@ -554,9 +545,6 @@
   "kent": {
     "gss": "E10000016"
   },
-  "kettering": {
-    "gss": "E07000153"
-  },
   "kings-lynn-and-west-norfolk": {
     "gss": "E07000146"
   },
@@ -731,6 +719,9 @@
   "north-norfolk": {
     "gss": "E07000147"
   },
+  "north-northamptonshire": {
+    "gss": "E06000061"
+  },
   "north-somerset": {
     "gss": "E06000024"
   },
@@ -745,12 +736,6 @@
   },
   "north-yorkshire": {
     "gss": "E10000023"
-  },
-  "northampton": {
-    "gss": "E07000154"
-  },
-  "northamptonshire": {
-    "gss": "E10000021"
   },
   "northumberland": {
     "gss": "E06000057"
@@ -944,9 +929,6 @@
   "south-norfolk": {
     "gss": "E07000149"
   },
-  "south-northamptonshire": {
-    "gss": "E07000155"
-  },
   "south-oxfordshire": {
     "gss": "E07000179"
   },
@@ -1127,9 +1109,6 @@
   "wealden": {
     "gss": "E07000065"
   },
-  "wellingborough": {
-    "gss": "E07000156"
-  },
   "welwyn-hatfield": {
     "gss": "E07000241"
   },
@@ -1150,6 +1129,9 @@
   },
   "west-lothian": {
     "gss": "S12000040"
+  },
+  "west-northamptonshire": {
+    "gss": "E06000062"
   },
   "west-oxfordshire": {
     "gss": "E07000181"

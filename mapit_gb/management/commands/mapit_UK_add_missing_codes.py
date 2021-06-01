@@ -70,6 +70,10 @@ class Command(BaseCommand):
 
             # https://geoportal.statistics.gov.uk/datasets/f7ba20849bc54f58bbb8ef14c640f9a9_0
             MissingOnsCode(code='E06000060', area_type='UTA', area_name='Buckinghamshire Council'),
+
+            # Merger of non-metropolitan districts and Northamptonshire County Council
+            MissingOnsCode(code='E06000061', area_type='UTA', area_name='North Northamptonshire Council'),
+            MissingOnsCode(code='E06000062', area_type='UTA', area_name='West Northamptonshire Council'),
         ]
 
 
