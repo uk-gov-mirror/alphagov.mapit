@@ -254,39 +254,45 @@ gds aws govuk-production-poweruser aws s3api put-object --acl public-read --buck
 gds aws govuk-production-poweruser aws s3 cp mapit-<%b%Y>-<a-description-of-change>.sql.gz s3://govuk-custom-formats-mapit-storage-production/source-data/${DATE}/ --acl public-read
 ```
 
-### 3. Test a server in Staging
+### <a name="test-a-server-in-staging">3. Test a server in Staging</a>
 
 **NB: THIS REQUIRES ACCESS TO GOV.UK PRODUCTION**
 
-Once the data has been uploaded change the URL and checksum (using
-`sha1sum <your-mapit-file.sql.gz>`) reference in `import-db-from-s3.sh`
-to refer to your new file, see [this example PR](https://github.com/alphagov/mapit/pull/58/files).
-Submit change as a PR against [Mapit](https://github.com/alphagov/mapit) and
-deploy following the normal process to `staging`.
+1. Update `import-db-from-s3.sh` to refer to your new file, see [this example PR](https://github.com/alphagov/mapit/pull/58/files).
 
-Before you can test updated data you will need to clear the shared cache. Refer
-to [these docs](https://docs.publishing.service.gov.uk/manual/mapit-cache.html) on how
-to clear the cache.
+1. Deploy your change to staging using [the links in the Release app](https://release.publishing.service.gov.uk/applications/mapit).
 
-> Testing on integration may not be as accurate as staging so we recommend testing on staging
+1. Choose a random node that will be used for testing and note the name (e.g. `ip-10-12-4-139.eu-west-1.compute.internal`):
 
-Now that your changes have been deployed, you can test the new database in
-`AWS staging` before moving to `production`. See [Testing a server with an
-updated Mapit database](./docs/testing-server.md).
+   ```
+   $ gds govuk c ssh -e staging jumpbox 'govuk_node_list -c mapit'
+   ```
 
-Once you have tested that a new mapit node works as expected, you can
-update each mapit node in turn using a [fabric
-script](https://github.com/alphagov/fabric-scripts/blob/master/mapit.py#L10):
+1. SSH into the node and stop any Postgres instances, then restart (to terminate any connections):
 
-    $ fab $environment -H <ip_address> mapit.update_database_via_app
+   ```
+   sudo service postgresql stop
+   ps aux | grep postgresql
+   sudo kill -9 <pid>
+   sudo service postgresql start
+   ```
 
-We can happily survive with one mapit-server in an environment while
-this is done.
+1. Use a [fabric script](https://github.com/alphagov/fabric-scripts/blob/master/mapit.py#L10) to update the database:
+
+   ```
+   $ fab staging-aws -H <node_name> mapit.update_database_via_app
+   ```
+
+1. [Clear the shared cache](https://docs.publishing.service.gov.uk/manual/mapit-caches.html) for that instance.
+
+1. Follow the instructions in [Testing a server with an updated Mapit database](/testing-server.md).
+
 
 ### <a name="update-servers-with-new-database">4. Update production servers with new database</a>
 
 Now that you are happy with the changes in `staging`, you can now follow update
-the servers in `production`.
+the servers in `production` by performing the process for staging on each
+production node.
 
 > **Note: Only deploy this change to production once the new data has been tested
 in staging. If a new Mapit machine gets created in AWS, it will automatically
