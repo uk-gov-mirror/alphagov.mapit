@@ -101,6 +101,9 @@ class Command(LabelCommand):
             else:
                 raise Exception(area_code)
 
+            if area_code == 'ER':
+                area_code = 'EUR'
+
             try:
                 check = control.check(name, area_code, country, feat.geom, ons_code=ons_code, commit=options['commit'])
                 if check is True:
@@ -203,5 +206,9 @@ class Command(LabelCommand):
         # October 2019 gets Shetland Islands code wrong
         if area_code == 'WMC' and ons_code == 'S1400005':
             return {'ons-code': 'S14000051'}
+
+        # May 2021 has two Abbey EDs - will need to check ID at next release
+        if area_code == 'CED' and name == 'Abbey ED' and unit_id == '180320':
+            return {'unit-id': '1290'}
 
         return {}
