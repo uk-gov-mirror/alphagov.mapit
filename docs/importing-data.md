@@ -303,6 +303,23 @@ Refer to [these
 docs](https://docs.publishing.service.gov.uk/manual/mapit-caches.html) on how
 to clear the cache.
 
+### <a name="update-local-links-manager">5. Update Local Links Manager</a>
+
+If there are new local authorities in this release, you will need to add these
+to Local Links Manager. This step can be skipped if there are no new authorities.
+
+1. Run [a Rake task](https://deploy.blue.staging.govuk.digital/job/run-rake-task/parambuild/?TARGET_APPLICATION=local-links-manager&MACHINE_CLASS=backend&RAKE_TASK=import:local_authorities:import_all) to import the local authority slugs.
+
+   ```
+   rake import:local_authorities:import_all
+   ```
+
+1. Run [a Rake task](https://deploy.blue.staging.govuk.digital/job/run-rake-task/parambuild/?TARGET_APPLICATION=local-links-manager&MACHINE_CLASS=backend&RAKE_TASK=local_authority:update_homepage%5Bgovuk-slug%2Chttps%3A%2F%2Fwww.website.gov.uk%2F%5D) to add the homepage URL for each local authority that has been added.
+
+   ```
+   rake local_authority:update_homepage[govuk-slug,https://www.website.gov.uk/]
+   ```
+
 ## Troubleshooting
 
 ### Useful database queries
