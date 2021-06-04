@@ -320,6 +320,12 @@ to Local Links Manager. This step can be skipped if there are no new authorities
    rake local_authority:update_homepage[govuk-slug,https://www.website.gov.uk/]
    ```
 
+1. Run [a Rake task](https://deploy.blue.staging.govuk.digital/job/run-rake-task/parambuild/?TARGET_APPLICATION=local-links-manager&MACHINE_CLASS=backend&RAKE_TASK=import:missing_links) to add the service links for the new local authorities.
+
+   ```
+   rake import:missing_links
+   ```
+
 ## Troubleshooting
 
 ### Useful database queries
