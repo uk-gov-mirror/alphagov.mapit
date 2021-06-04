@@ -258,41 +258,21 @@ gds aws govuk-production-poweruser aws s3 cp mapit-<%b%Y>-<a-description-of-chan
 
 **NB: THIS REQUIRES ACCESS TO GOV.UK PRODUCTION**
 
-1. Update `import-db-from-s3.sh` to refer to your new file, see [this example PR](https://github.com/alphagov/mapit/pull/58/files).
+1. Update [import-db-from-s3.sh](https://github.com/alphagov/govuk-puppet/blob/bb2313aff9f73c35acb655f68d63b442b09825aa/modules/govuk/files/etc/govuk/import_mapit_data.sh#L25) in [govuk-puppet](https://github.com/alphagov/govuk-puppet) to refer to your new file.
 
-1. Deploy your change to staging using [the links in the Release app](https://release.publishing.service.gov.uk/applications/mapit).
+1. [Deploy](https://docs.publishing.service.gov.uk/manual/deploy-puppet.html)
+your Puppet changes to Staging.
 
-1. Choose a random node that will be used for testing and note the name (e.g. `ip-10-12-4-139.eu-west-1.compute.internal`):
+1. [Reprovision](https://docs.publishing.service.gov.uk/manual/reprovision.html) one instance of Mapit (keep note of the Mapit machine index) so that a new Mapit instance is created with the updated database.
 
-   ```
-   $ gds govuk c ssh -e staging jumpbox 'govuk_node_list -c mapit'
-   ```
-
-1. SSH into the node and stop any Postgres instances, then restart (to terminate any connections):
-
-   ```
-   sudo service postgresql stop
-   ps aux | grep postgresql
-   sudo kill -9 <pid>
-   sudo service postgresql start
-   ```
-
-1. Use a [fabric script](https://github.com/alphagov/fabric-scripts/blob/master/mapit.py#L10) to update the database:
-
-   ```
-   $ fab staging-aws -H <node_name> mapit.update_database_via_app
-   ```
-
-1. [Clear the shared cache](https://docs.publishing.service.gov.uk/manual/mapit-caches.html) for that instance.
-
-1. Follow the instructions in [Testing a server with an updated Mapit database](/testing-server.md).
-
+1. SSH into the replacement Mapit instance after it has been provisioned (the instance is successfully  provisioned if it is added to the Mapit target group in the AWS EC2 console) and follow
+the instructions in [Testing a server with an updated Mapit database](/testing-server.md).
 
 ### <a name="update-servers-with-new-database">4. Update production servers with new database</a>
 
-Now that you are happy with the changes in `staging`, you can now follow update
-the servers in `production` by performing the process for staging on each
-production node.
+Now that you are happy with the changes in `Staging`, you can reprovision other instances of
+Mapit in `Staging` before deploying your puppet changes in `Production` and reprovision the instances
+there.
 
 > **Note: Only deploy this change to production once the new data has been tested
 in staging. If a new Mapit machine gets created in AWS, it will automatically
