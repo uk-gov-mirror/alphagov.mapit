@@ -1,5 +1,7 @@
 # MapIt
 
+## As of October 2022, Mapit is no longer used for location services within GDS - You should now use [Locations API](https://github.com/alphagov/locations-api) and/or [Local Links Manager](https://github.com/alphagov/local-links-manager) to provide the functionality that Mapit once provided.
+
 This is a fork of [the MapIt repo](https://github.com/mysociety/mapit). MapIt is a Python/Django application (backed by PostgreSQL), that provides RESTful API for looking up postcodes, council boundaries, etc.
 
 **Avoid adding features, changing behaviours, or touching the code of MapIt itself**. The only [differences against the original repo](https://github.com/mysociety/mapit/compare/master...alphagov:main) should only be to help integrate it into the GOV.UK stack. So far this includes:
